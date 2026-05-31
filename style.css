@@ -1,0 +1,96 @@
+/* ============================================================================
+ * style.css — Auto Context Rollover
+ * Scoped to .acr-* classes so we never collide with SillyTavern core styles.
+ * Uses ST CSS variables where available so we inherit the active theme.
+ * ==========================================================================*/
+
+.acr-settings .acr-drawer {
+    margin-top: 6px;
+}
+
+.acr-settings .acr-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.acr-settings .acr-row input[type="range"] {
+    width: 100%;
+}
+
+.acr-settings .acr-num {
+    max-width: 120px;
+}
+
+.acr-settings .acr-status {
+    font-size: 0.82em;
+    opacity: 0.85;
+    margin: 6px 0;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background: var(--SmartThemeBlurTintColor, rgba(0, 0, 0, 0.15));
+    line-height: 1.45;
+}
+
+.acr-settings .acr-desc {
+    font-size: 0.82em;
+    opacity: 0.8;
+    margin: 2px 0 8px;
+    font-style: italic;
+}
+
+.acr-settings .acr-suggest {
+    font-size: 0.82em;
+    margin: 4px 0 8px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    background: var(--SmartThemeQuoteColor, rgba(255, 200, 0, 0.12));
+    border: 1px solid rgba(255, 200, 0, 0.35);
+}
+
+.acr-settings .acr-scope {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.85em;
+    margin: 6px 0;
+}
+
+.acr-settings .acr-subbox {
+    border: 1px solid var(--SmartThemeBorderColor, rgba(255, 255, 255, 0.15));
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.acr-settings .acr-subbox > b {
+    margin-bottom: 4px;
+}
+
+.acr-settings .acr-btnrow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.acr-settings textarea.text_pole {
+    width: 100%;
+    font-family: var(--monoFontFamily, monospace);
+    font-size: 0.82em;
+    resize: vertical;
+}
+
+.acr-settings .checkbox_label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px 0;
+    font-size: 0.9em;
+}
